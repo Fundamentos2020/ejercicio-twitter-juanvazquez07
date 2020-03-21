@@ -1,29 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Twitter</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/skeleton.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
 </head>
+
 <body>
-    <div>
-        <h1>Local Storage</h1>
-        <div>
-            <div>
-                <form action="#">
+
+    <div id="contenido">
+        <div class="container">
+
+            <h1>Local Storage</h1>
+            <div class="row">
+                <div class="six columns">
                     <label for="tweet">Tweet:</label>
-                    <textarea name="tweet"></textarea>
-                    <button>Agregar</button>
-                </form>
+                    <form action="#" id="formulario">
+                        <label for="tweet"></label>
+                        <textarea id="tweet" class="u-full-width"></textarea>
+                        <input type="submit" class="button u-full-width button-primary" value="Agregar">
+                    </form>
+                </div>
+                <div class="six columns">
+                    <h2>Mis Tweets</h2>
+                    <div id="lista-tweets"></div>
+                </div>
             </div>
-            <div>
-                <h2>Mis Tweets</h2>
-                <div></div>
-            </div>
+
         </div>
     </div>
+    <!--#contenido-->
 
-    <script src="app.js"></script>
+   <!-- <div class="container ">
+            <li>
+                <img src="https://picsum.photos/100" class="izquierda"/> 
+                Si queremos alinear texto al lado de una imagen con HTML y CSS muchas veces nos encontramos con el problema de que no queda alineado del modo que nos interesa, ya que por defecto se alinea abajo.
+            </li>      
+    </div>  -->
+    <div class="pie-pagina container">
+        <h1 class="text-white">261850-Juan Carlos Vazquez Garcia</h1>
+    </div>
+
+    <script src="assets/js/app.js"></script>
 </body>
+
 </html>
